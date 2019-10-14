@@ -1,0 +1,20 @@
+Explain in detail the workings of a dynamic array:
+* What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+    Accessing and appending to the end of an array is o(1) time complexity. Since we know the index we are accessing and we are simply adding to the end of the array these two
+    functions only have to performed once. As for appending to the front of the array the time complexity for this action is o(n) significantly slower. The reason this is O(n)
+    is every index in the array must be shifted down 1 index this will require 1 iteration through the length of the entire array.
+
+
+* What is the worse case scenario if you try to extend the storage size of a dynamic array?
+    The worse case scenario is O(n) since we can not extend an already exsiting array we would need to create a new larger array
+    and append the items in the old array to the new array since the old array will need to be iterated through.
+
+
+Explain how blockchain networks remain in consensus:
+* What does a node do if it gets a message from another in the network with a new block?
+    The node will validate the new block and then append the block to the chain and then mine a new block. 
+
+* Why can't someone cheat by changing a transaction from an earlier block to give themselves coins?
+    The Block chain is almost impossible to cheat because how the block chain handles data transactions. The block stores not only the current transaction but the previous transaction as well,
+    in order for someone to alter a transaction they would have to manipualte every transaction in the chain. The block chain validates with the current and previous transactions
+    in the chain unless every transaction is altered the cheat would read as an invalid transaction.
